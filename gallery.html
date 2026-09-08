@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery | Reigners Destiny Schools</title>
 
+    <!-- Favicon Links -->
     <link rel="icon" type="image/jpeg" href="logo.jpeg">
     <link rel="shortcut icon" type="image/jpeg" href="logo.jpeg">
     <link rel="apple-touch-icon" href="logo.jpeg">
@@ -13,17 +14,18 @@
 </head>
 <body>
 
-    <header class="site-header">
-        <nav class="nav-container">
-            <div class="logo-box">
-                <img alt="Reigners Destiny Schools Crest" src="logo.jpeg" class="site-logo">
-                <div class="brand-text">
+    <!-- Main Navigation Header -->
+    <header>
+        <nav>
+            <div>
+                <img alt="Reigners Destiny Schools Crest" src="logo.jpeg">
+                <div>
                     <h1>Reigners Destiny</h1>
                     <span>Knowledge & Discretion</span>
                 </div>
             </div>
             
-            <ul class="nav-links">
+            <ul id="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="academics.html">Academics</a></li>
@@ -31,9 +33,17 @@
                 <li><a href="admissions.html">Admissions</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+
+            <!-- Mobile Hamburger Icon -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
+    <!-- Page Banner -->
     <section class="gallery-hero">
         <div class="hero-overlay">
             <h2>Campus & Student Life</h2>
@@ -41,6 +51,7 @@
         </div>
     </section>
 
+    <!-- Gallery Grid -->
     <main class="gallery-section">
         <div class="gallery-grid">
             
@@ -95,9 +106,84 @@
         </div>
     </main>
 
-    <footer class="site-footer">
-        <p>© 2026 Reigners Destiny Schools. All Rights Reserved.</p>
+    <!-- Full Multi-Column Footer -->
+    <footer>
+        <div>
+            <div>
+                <div>
+                    <img alt="Reigners Destiny Schools Crest" src="logo.jpeg">
+                    <div>
+                        <h2>Reigners Destiny</h2>
+                        <span>Knowledge & Discretion</span>
+                    </div>
+                </div>
+                <p>Established April 26, 2010. Dedicated to raising sound academic scholars grounded in strong character and ethical leadership.</p>
+                <div>
+                    <a href="#" title="Facebook">FB</a>
+                    <a href="#" title="Instagram">IG</a>
+                    <a href="#" title="Twitter/X">X</a>
+                    <a href="#" title="WhatsApp">WA</a>
+                </div>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Get In Touch</h3>
+                <ul>
+                    <li>
+                        <span>📍</span>
+                        <p>Reigners Destiny Schools Campus, Lagos, Nigeria.</p>
+                    </li>
+                    <li>
+                        <span>📞</span>
+                        <p>+234 800 000 0000</p>
+                    </li>
+                    <li>
+                        <span>✉️</span>
+                        <p>info@reignersdestinyschools.com</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Stay Updated</h3>
+                <p>Subscribe to receive news, announcements, and term updates directly to your inbox.</p>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <p>© 2026 Reigners Destiny Schools. All Rights Reserved.</p>
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
+    <!-- Mobile Navigation Toggle Script -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+        }
+    </script>
 </body>
 </html>
