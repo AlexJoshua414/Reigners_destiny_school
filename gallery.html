@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery | Reigners Destiny Schools</title>
 
-    <!-- Favicon Links -->
     <link rel="icon" type="image/jpeg" href="logo.jpeg">
     <link rel="shortcut icon" type="image/jpeg" href="logo.jpeg">
     <link rel="apple-touch-icon" href="logo.jpeg">
@@ -14,18 +13,17 @@
 </head>
 <body>
 
-    <!-- Header / Navigation -->
-    <header>
-        <nav>
-            <div>
-                <img alt="Reigners Destiny Schools Crest" src="logo.jpeg">
-                <div>
+    <header class="site-header">
+        <nav class="nav-container">
+            <div class="logo-box">
+                <img alt="Reigners Destiny Schools Crest" src="logo.jpeg" class="site-logo">
+                <div class="brand-text">
                     <h1>Reigners Destiny</h1>
                     <span>Knowledge & Discretion</span>
                 </div>
             </div>
             
-            <ul>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="academics.html">Academics</a></li>
@@ -36,86 +34,69 @@
         </nav>
     </header>
 
-    <!-- Page Banner -->
-    <section class="gallery-banner">
-        <h2>Campus Life & Gallery</h2>
-        <p>Explore our campus facilities, academic activities, and school events.</p>
+    <section class="gallery-hero">
+        <div class="hero-overlay">
+            <h2>Campus & Student Life</h2>
+            <p>Take a tour through our learning spaces, campus facilities, and events.</p>
+        </div>
     </section>
 
-    <!-- Main Gallery Section -->
-    <main class="gallery-container">
-
-        <!-- Category Filter Buttons -->
-        <div class="gallery-filters">
-            <button class="filter-btn active">All</button>
-            <button class="filter-btn">Campus</button>
-            <button class="filter-btn">Academics</button>
-            <button class="filter-btn">Events</button>
-        </div>
-
-        <!-- Image Grid -->
+    <main class="gallery-section">
         <div class="gallery-grid">
-            <div class="gallery-card">
-                <img src="placeholder1.jpg" alt="School Exterior Building">
-                <div class="gallery-overlay">
-                    <span>Main Campus Exterior</span>
-                </div>
-            </div>
             
             <div class="gallery-card">
-                <img src="placeholder2.jpg" alt="ICT Laboratory">
-                <div class="gallery-overlay">
-                    <span>ICT Laboratory</span>
+                <img src="https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=800&q=80" alt="Main School Campus Exterior">
+                <div class="card-caption">
+                    <h3>Main Campus Exterior</h3>
+                    <p>Building & Entrance</p>
                 </div>
             </div>
 
             <div class="gallery-card">
-                <img src="placeholder3.jpg" alt="Science Lab Session">
-                <div class="gallery-overlay">
-                    <span>Science Laboratory</span>
+                <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=800&q=80" alt="ICT & Computer Science Center">
+                <div class="card-caption">
+                    <h3>ICT Computer Lab</h3>
+                    <p>Modern Technology Workstations</p>
                 </div>
             </div>
 
             <div class="gallery-card">
-                <img src="placeholder4.jpg" alt="Classroom Session">
-                <div class="gallery-overlay">
-                    <span>Interactive Classroom</span>
+                <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80" alt="Science Practical Laboratory">
+                <div class="card-caption">
+                    <h3>Science Laboratory</h3>
+                    <p>Physics, Chemistry & Biology Labs</p>
                 </div>
             </div>
 
             <div class="gallery-card">
-                <img src="placeholder5.jpg" alt="Library Learning Space">
-                <div class="gallery-overlay">
-                    <span>School Library</span>
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80" alt="Interactive Classroom">
+                <div class="card-caption">
+                    <h3>Interactive Classrooms</h3>
+                    <p>Focused Academic Learning Space</p>
                 </div>
             </div>
 
             <div class="gallery-card">
-                <img src="placeholder6.jpg" alt="School Assembly & Events">
-                <div class="gallery-overlay">
-                    <span>Annual School Event</span>
+                <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=800&q=80" alt="School Library">
+                <div class="card-caption">
+                    <h3>Resource Library</h3>
+                    <p>Books & Quiet Study Spaces</p>
                 </div>
             </div>
+
+            <div class="gallery-card">
+                <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80" alt="Sports Grounds & Activities">
+                <div class="card-caption">
+                    <h3>Sports & Recreation</h3>
+                    <p>Athletics & Outdoor Play Grounds</p>
+                </div>
+            </div>
+
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <div>
-            <div>
-                <div>
-                    <img alt="Reigners Destiny Schools Crest" src="logo.jpeg">
-                    <div>
-                        <h2>Reigners Destiny</h2>
-                        <span>Knowledge & Discretion</span>
-                    </div>
-                </div>
-                <p>Established April 26, 2010. Dedicated to raising sound academic scholars grounded in strong character and ethical leadership.</p>
-            </div>
-        </div>
-        <div>
-            <p>© 2026 Reigners Destiny Schools. All Rights Reserved.</p>
-        </div>
+    <footer class="site-footer">
+        <p>© 2026 Reigners Destiny Schools. All Rights Reserved.</p>
     </footer>
 
 </body>
