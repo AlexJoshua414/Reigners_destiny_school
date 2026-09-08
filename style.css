@@ -667,3 +667,81 @@ header {
     }
 }
 
+/* Fix Big Header Logo Bug */
+.site-logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Gallery Hero Banner */
+.gallery-hero {
+    background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
+                url('https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.gallery-hero h2 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+/* Responsive Grid Layout */
+.gallery-section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+/* Clean Card Styles */
+.gallery-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-caption {
+    padding: 16px;
+}
+
+.card-caption h3 {
+    font-size: 1.1rem;
+    color: #0f172a;
+    margin: 0 0 4px 0;
+}
+
+.card-caption p {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin: 0;
+}
