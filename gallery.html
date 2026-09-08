@@ -16,29 +16,29 @@
 
     <!-- Main Navigation Header -->
     <header>
-        <nav>
-            <div>
-                <img alt="Reigners Destiny Schools Crest" src="logo.jpeg">
-                <div>
+        <nav class="navbar">
+            <div class="brand">
+                <img alt="Reigners Destiny Schools Crest" src="logo.jpeg" class="brand-logo">
+                <div class="brand-text">
                     <h1>Reigners Destiny</h1>
                     <span>Knowledge & Discretion</span>
                 </div>
             </div>
             
-            <ul id="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="gallery.html" class="active">Gallery</a></li>
-                <li><a href="admissions.html">Admissions</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="academics.html" class="nav-link">Academics</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
 
             <!-- Mobile Hamburger Icon -->
             <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </nav>
     </header>
@@ -107,28 +107,28 @@
     </main>
 
     <!-- Full Multi-Column Footer -->
-    <footer>
-        <div>
-            <div>
-                <div>
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-col">
+                <div class="footer-brand">
                     <img alt="Reigners Destiny Schools Crest" src="logo.jpeg">
                     <div>
                         <h2>Reigners Destiny</h2>
-                        <span>Knowledge & Discretion</span>
+                        <span class="footer-motto">Knowledge & Discretion</span>
                     </div>
                 </div>
-                <p>Established April 26, 2010. Dedicated to raising sound academic scholars grounded in strong character and ethical leadership.</p>
-                <div>
-                    <a href="#" title="Facebook">FB</a>
-                    <a href="#" title="Instagram">IG</a>
-                    <a href="#" title="Twitter/X">X</a>
-                    <a href="#" title="WhatsApp">WA</a>
+                <p class="footer-desc">Established April 26, 2010. Dedicated to raising sound academic scholars grounded in strong character and ethical leadership.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon" title="Facebook">FB</a>
+                    <a href="#" class="social-icon" title="Instagram">IG</a>
+                    <a href="#" class="social-icon" title="Twitter/X">X</a>
+                    <a href="#" class="social-icon" title="WhatsApp">WA</a>
                 </div>
             </div>
 
-            <div>
+            <div class="footer-col">
                 <h3>Quick Links</h3>
-                <ul>
+                <ul class="footer-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="academics.html">Academics</a></li>
@@ -138,9 +138,9 @@
                 </ul>
             </div>
 
-            <div>
+            <div class="footer-col">
                 <h3>Get In Touch</h3>
-                <ul>
+                <ul class="footer-contact-list">
                     <li>
                         <span>📍</span>
                         <p>Reigners Destiny Schools Campus, Lagos, Nigeria.</p>
@@ -156,16 +156,20 @@
                 </ul>
             </div>
 
-            <div>
+            <div class="footer-col newsletter-box">
                 <h3>Stay Updated</h3>
                 <p>Subscribe to receive news, announcements, and term updates directly to your inbox.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
             </div>
         </div>
 
-        <div>
-            <div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
                 <p>© 2026 Reigners Destiny Schools. All Rights Reserved.</p>
-                <div>
+                <div class="footer-legal-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Use</a>
                 </div>
